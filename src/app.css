@@ -1,0 +1,300 @@
+.site-shell {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0 4rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0 1.5rem;
+}
+
+.brand-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow,
+.section-kicker,
+.hero-card-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.brand-name {
+  color: #1c1613;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-links a,
+.secondary-link {
+  color: #513c33;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #701c2f, #b6512e);
+  color: #fff4ef;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 16px 30px rgba(112, 28, 47, 0.18);
+}
+
+.cta-button--small {
+  min-height: 2.5rem;
+  padding-inline: 1rem;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.25rem;
+  align-items: center;
+  padding: 2.5rem 0 3rem;
+}
+
+.hero-copy h1,
+.info-strip h2,
+.section-heading h2,
+.contact-banner h2 {
+  margin: 0.4rem 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.05;
+  color: #201613;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+}
+
+.hero-text,
+.info-strip p,
+.feature-card p,
+.step-card p,
+.testimonial-card p,
+.contact-banner p {
+  color: #5d4d45;
+  line-height: 1.7;
+}
+
+.hero-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.hero-highlights {
+  display: grid;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+  color: #2f2520;
+}
+
+.hero-highlights li::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #701c2f, #d08a3b);
+  flex: none;
+}
+
+.hero-card {
+  overflow: hidden;
+  border-radius: 32px;
+  background: #fffaf6;
+  box-shadow: 0 22px 50px rgba(58, 36, 24, 0.16);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.hero-card-content {
+  padding: 1.25rem;
+}
+
+.hero-card-metric {
+  margin: 0.35rem 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+  color: #231715;
+}
+
+.info-strip,
+.contact-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  align-items: start;
+  padding: 2rem;
+  border-radius: 28px;
+}
+
+.info-strip {
+  background: rgba(255, 248, 241, 0.92);
+  border: 1px solid rgba(124, 81, 55, 0.1);
+}
+
+.content-section {
+  padding: 4rem 0 0;
+}
+
+.content-section--accent {
+  margin-top: 3rem;
+  padding: 2.2rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(112, 28, 47, 0.07), rgba(208, 138, 59, 0.12));
+}
+
+.section-heading {
+  display: grid;
+  gap: 0.3rem;
+  max-width: 42rem;
+}
+
+.card-grid,
+.testimonial-grid,
+.steps-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.card-grid,
+.testimonial-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.steps-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-card,
+.testimonial-card,
+.step-card {
+  padding: 1.4rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(124, 81, 55, 0.12);
+  box-shadow: 0 18px 36px rgba(58, 36, 24, 0.08);
+}
+
+.feature-card h3,
+.testimonial-name {
+  margin: 0 0 0.55rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #221715;
+}
+
+.step-number {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: #fff5ed;
+  color: #7b2d2f;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.testimonial-quote {
+  margin-top: 0;
+}
+
+.testimonial-role {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.contact-banner {
+  margin-top: 4rem;
+  background: linear-gradient(135deg, #2e1616, #6d1e2d 60%, #a84d29);
+}
+
+.contact-banner h2,
+.contact-banner p,
+.secondary-link--light,
+.contact-banner .section-kicker {
+  color: #fff4ed;
+}
+
+@media (max-width: 960px) {
+  .hero-section,
+  .info-strip,
+  .contact-banner,
+  .card-grid,
+  .testimonial-grid,
+  .steps-list {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-shell {
+    width: min(100% - 1.25rem, 1180px);
+  }
+
+  .hero-section {
+    padding-top: 1.25rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .info-strip,
+  .content-section--accent,
+  .contact-banner {
+    padding: 1.4rem;
+  }
+}
